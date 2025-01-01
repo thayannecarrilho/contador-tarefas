@@ -1,4 +1,5 @@
-import Background  from './assets/background.jpg';
+import Background1  from './assets/background1.jpg';
+import Background2 from './assets/background2.jpg'
 import { styled, createGlobalStyle } from 'styled-components';
 
 export const Container = styled.div`
@@ -7,39 +8,52 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
     font-family: "Pacifico", serif;
-    background-image: url(${Background});
-    background-size: 100%;
-    padding: 0 20px;
+    @media (max-width: 500px) {
+        flex-direction: column; 
+    }
 `;
 
-export const Title = styled.h1`
+
+
+export const Title = styled.div`
     font-size: 2rem;
     color: #333;
     text-align: center;
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
     font-size: 1rem;
     color: #666;
     line-height: 1.6;
     max-width: 600px;
     text-align: center;
-    margin-bottom: 20px;
 `;
 
-export const Total = styled.h3`
+export const Total = styled.p`
     font-size: 1.5rem;
     color: #d81974;
-    font-weight: bold;
 `;
 
-export const ContainerTarefas = styled.div`
+export const ContainerTarefas1 = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    width: 100%;    
+    height: 100%;
+    background-size: 100%;
+    background-image: url(${Background1});
+`;
+export const ContainerTarefas2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-image: url(${Background2});
 `;
 
 export const Button = styled.button`

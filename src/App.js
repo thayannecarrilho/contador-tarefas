@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Tarefa from './components/Tarefa'
-import {Container, Title, Text, Total, ContainerTarefas, Button, InputWrapper, Input} from './styles'
+import {Container, Title, Text, Total, ContainerTarefas1, ContainerTarefas2, Button, InputWrapper, Input} from './styles'
 
 function App() {
   // Estado para armazenar as tarefas
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Container>
-      <ContainerTarefas>
+      <ContainerTarefas1>
         <Title>Contador de Tarefas</Title>
         <Total>Total de tarefas: {tarefa.length}</Total>
         <InputWrapper>
@@ -35,9 +35,9 @@ function App() {
         />
         <Button onClick={adicionarTarefa}>Adicionar</Button>
       </InputWrapper>
-      </ContainerTarefas>    
+      </ContainerTarefas1>    
 
-      <ContainerTarefas>
+      <ContainerTarefas2>
         
         {tarefa.map((tarefa) => (
           <Tarefa
@@ -47,7 +47,7 @@ function App() {
             removerTarefa={removerTarefa}
           />
         ))}
-      </ContainerTarefas>
+      </ContainerTarefas2>
     </Container>
   );
 }
