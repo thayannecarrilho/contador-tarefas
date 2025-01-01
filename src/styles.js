@@ -20,6 +20,10 @@ export const Title = styled.div`
     font-size: 2rem;
     color: #333;
     text-align: center;
+    @media (max-width: 500px) {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+    }
 `;
 
 export const Text = styled.div`
@@ -33,6 +37,9 @@ export const Text = styled.div`
 export const Total = styled.p`
     font-size: 1.5rem;
     color: #d81974;
+     @media (max-width: 500px) {
+        font-size: 1rem;
+    }
 `;
 
 export const ContainerTarefas1 = styled.div`
