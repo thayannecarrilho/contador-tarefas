@@ -41,7 +41,7 @@ O aplicativo estará disponível em `http://localhost:3000`.
 
 Abaixo está uma captura de tela da interface do projeto.
 
-<img src='./assets/interface.png'/>
+<img src='./src/assets/interface.png'/>
  
 ## Como Contribuir
 
